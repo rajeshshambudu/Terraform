@@ -1,15 +1,11 @@
-output "resource_group_name" {
+output "resource_group" {
   value = azurerm_resource_group.rg.name
 }
 
-output "virtual_network_name" {
-  value = azurerm_virtual_network.vnet.name
+output "vm_public_ip" {
+  value = azurerm_public_ip.pip.ip_address
 }
 
-output "subnet_name" {
-  value = azurerm_subnet.subnet.name
-}
-
-output "location" {
-  value = azurerm_resource_group.rg.location
+output "vm_name" {
+  value = azurerm_linux_virtual_machine.vm.name
 }
