@@ -1,4 +1,5 @@
-###
+Terraform 
+#
 az login
 terraform init
 terraform plan
